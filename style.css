@@ -1,0 +1,67 @@
+body{
+  background-color: #f0f8f0;
+}
+#suggestions {
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  background-color: white;
+  display: none; /* Hidden initially */
+  z-index: 1000;
+  /* width: 100%; */
+  left: 0;
+}
+
+#suggestions div {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#suggestions div:hover {
+  background-color: #f0f0f0;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+#editor {
+  box-sizing: border-box;
+  border: 5px solid green;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+
+.toolbar {
+  background-color: #222;
+  border-top-left-radius:0.5rem;
+  border-top-right-radius:0.5rem;
+  width: 100%;
+  color: white;
+  padding: 0.3rem 1rem;
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.toolbar button i{
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+textarea {
+  margin-top: 10px;
+  border-top-left-radius: 0rem !important;
+  border-top-right-radius: 0rem !important;
+}
+textarea:focus{
+  box-shadow: none !important;
+}
